@@ -1,0 +1,11 @@
+{
+  "name": "react-webpack-template",
+  "version": "1.0.0",
+  "description": "CLI (Command Line Interface) to create a new React Template utilizing Webpack 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dominick.nitecki",
+  "license": "ISC"
+}
