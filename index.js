@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const process = require("process");
 const fs = require("fs");
-const path = require("path");
 const args = process.argv;
 const newDir =
   args[2] === undefined ? "./my-react-app-template" : `./${args[2]}`;
