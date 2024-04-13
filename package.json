@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-template",
+  "name": "@nitecki/react-webpack-template",
   "version": "1.0.0",
   "description": "CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 with Hot Module Replacement",
   "main": "index.js",
