@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-template-hmr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 with Hot Module Replacement",
   "main": "index.js",
   "scripts": {
