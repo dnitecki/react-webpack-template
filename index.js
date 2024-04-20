@@ -2,6 +2,8 @@
 const process = require("process");
 const fs = require("fs");
 const args = process.argv;
+const clone = require("git-clone");
+const repository = "https://github.com/dnitecki/react-app-template.git";
 const newDir =
   args[2] === undefined ? "./my-react-app-template" : `./${args[2]}`;
 
@@ -11,10 +13,13 @@ const createReactTemplateFolder = () => {
   });
 };
 
-const copyTemplateToFolder = () => {
+const copyTemplateToFolder = async () => {
   createReactTemplateFolder();
-  return fs.cp("./react-app-template", newDir, { recursive: true }, (err) => {
-    if (err) throw err;
+  clone(repository, newDir, [], (err) => {
+    if (err) {
+      console.log("Error cloning repository:", err);
+    }
+    console.log("Success!");
   });
 };
 
