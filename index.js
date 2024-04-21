@@ -19,7 +19,7 @@ const copyTemplateToFolder = async () => {
     if (err) {
       console.log("Error cloning repository:", err);
     }
-    console.log("Success!");
+    console.log("Success! You're React template is ready.");
   });
 };
 

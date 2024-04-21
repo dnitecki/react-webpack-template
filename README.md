@@ -17,7 +17,7 @@ CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 
 To install run the following command:
 
 ```bash
-npm install react-webpack-template-hmr
+npm install react-webpack-template
 ```
 
 To create a React template run the following command:

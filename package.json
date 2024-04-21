@@ -1,6 +1,6 @@
 {
-  "name": "react-webpack-template-hmr",
-  "version": "1.0.4",
+  "name": "@dnitecki/react-webpack-template",
+  "version": "1.0.0",
   "description": "CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 with Hot Module Replacement",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,12 @@
   "bin": {
     "create-react-template": "index.js"
   },
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "sass"
+  ],
   "author": "dominick.nitecki",
   "license": "ISC",
   "dependencies": {
