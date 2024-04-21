@@ -6,6 +6,7 @@ CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 
 
 - [Introduction](#introduction)
 - [Installation](#installation)
+- [Template Source Repository](#Source)
 
 ## Introduction
 
@@ -30,3 +31,7 @@ or
 ```bash
 create-react-template your-react-app-name
 ```
+
+## Source
+
+https://github.com/dnitecki/react-app-template
