@@ -1,6 +1,6 @@
 {
   "name": "@dnitecki/react-webpack-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI (Command Line Interface) to create a new React Template utilizing Webpack 5 with Hot Module Replacement",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,5 @@
     "sass"
   ],
   "author": "dominick.nitecki",
-  "license": "ISC",
-  "dependencies": {
-    "git-clone": "^0.2.0"
-  }
+  "license": "ISC"
 }
