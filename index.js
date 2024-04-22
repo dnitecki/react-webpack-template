@@ -7,7 +7,7 @@ const repository = "https://github.com/dnitecki/react-app-template.git";
 const newDir =
   args[2] === undefined ? "./my-react-app-template" : `./${args[2]}`;
 
-const clone = function (repo, targetPath, opts, cb) {
+const clone = (repo, targetPath, opts, cb) => {
   if (typeof opts === "function") {
     cb = opts;
     opts = null;
@@ -41,7 +41,7 @@ const clone = function (repo, targetPath, opts, cb) {
     }
   });
 
-  function gitCheckout() {
+  const gitCheckout = () => {
     const args = ["checkout", opts.checkout];
     const process = spawn(git, args, { cwd: targetPath });
     process.on("close", function (status) {
@@ -51,7 +51,7 @@ const clone = function (repo, targetPath, opts, cb) {
         cb && cb(new Error("'git checkout' failed with status " + status));
       }
     });
-  }
+  };
 };
 
 const createReactTemplateFolder = () => {
@@ -60,7 +60,7 @@ const createReactTemplateFolder = () => {
   });
 };
 
-const copyTemplateToFolder = async () => {
+const copyTemplateToFolder = () => {
   createReactTemplateFolder();
   clone(repository, newDir, [], (err) => {
     if (err) {
